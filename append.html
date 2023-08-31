@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    ol {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $('button').click(function () {
+        $('p').append(" This is the new paragraph.");
+        $('ol').append("<li>Rose</li><li>Lily</li>");
+      });
+    });
+  </script>
+</head>
+<body>
+  <p>Old Paragraph.</p>
+  <ol>Flowers
+    <li>Jasmine</li>
+    <li>Lotus</li>
+  </ol>
+  <br>
+  <button>Append</button>
+</body>
+</html>
